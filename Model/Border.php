@@ -1,9 +1,9 @@
 <?php
 
 
-namespace nasa\Models;
+namespace nasa\Model;
 
-use nasa\Models\Coordinate;
+use nasa\Model\Coordinate;
 
 
 class Border

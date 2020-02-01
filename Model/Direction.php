@@ -1,7 +1,7 @@
 <?php
 
 
-namespace nasa\Models;
+namespace nasa\Model;
 
 
 class Direction
@@ -25,10 +25,12 @@ class Direction
      * Direction constructor.
      * @param string $theOrientation
      */
-    public function __construct($theOrientation)
+    public function __construct(string $theOrientation)
     {
-        if($this->giveMeValidOrientation($theOrientation)){
+        $test = trim($theOrientation);
+        if($this->giveMeValidOrientation($test)){
             $this->startOrientation = $theOrientation;
+            return;
         }else{
             echo ("You gave wrong orientation");
         }

@@ -1,5 +1,5 @@
 <?php
-namespace nasa\Models;
+namespace nasa\Model;
 
 class Coordinate{
     private $x;

@@ -1,12 +1,7 @@
 {
-  "name": "nasa-squad",
-  "type": "project",
-  "authors": [
-    {
-      "name": "Christos Dousmanopoulos"
-    }
-  ],
-  "reguire": {
-    "php": ">=7.1"
+"autoload": {
+  "psr-4": {
+    "nasa\\": "nasa/"
   }
+}
 }

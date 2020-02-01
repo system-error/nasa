@@ -27,8 +27,8 @@ class Direction
      */
     public function __construct(string $theOrientation)
     {
-        $test = trim($theOrientation);
-        if($this->giveMeValidOrientation($test)){
+        $theOrientation = trim($theOrientation);
+        if($this->giveMeValidOrientation($theOrientation)){
             $this->startOrientation = $theOrientation;
             return;
         }else{
